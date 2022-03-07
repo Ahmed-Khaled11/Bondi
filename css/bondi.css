@@ -1,0 +1,213 @@
+:root {
+  --dark-color: #19283f;
+  --yellow-color: #ffc400;
+  --green-color: #03c7c0;
+  --red-color: #ff3150;
+  --section-color: #eff7fa;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Roboto", sans-serif;
+}
+/* start navbar */
+.navbar {
+  background-color: var(--dark-color);
+}
+.navbar .navbar-nav .nav-link:hover {
+  color: var(--green-color)!important;
+}
+.navbar .navbar-nav .nav-link.active,
+.navbar .navbar-nav .nav-link:focus,
+.navbar .navbar-nav .nav-link:hover {
+  position: relative;
+  color: var(--green-color);
+}
+.navbar .navbar-nav .nav-link.active::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: var(--green-color);
+}
+.navbar .search {
+  border-left: 1px solid var(--green-color);
+}
+.navbar .search svg {
+  color: var(--green-color);
+}
+.navbar .navbar-toggler {
+  transition: 0.3s;
+}
+.navbar .navbar-toggler:hover {
+  color: var(--green-color) !important;
+}
+.navbar .navbar-toggler:focus {
+  box-shadow: none;
+}
+.navbar .navbar-toggler[aria-expanded="true"] {
+  border: 1px solid var(--green-color) !important;
+}
+.main-btn {
+  color: var(--yellow-color);
+  background-color: var(--red-color) !important;
+}
+.main-btn:hover{
+  background-color: transparent !important;
+  color: var(--dark-color);
+}
+/* end navbar */
+/* start landing  */
+.landing {
+  background-color: var(--dark-color);
+  height: calc(45vh - 72px);
+}
+.main-title::after {
+  content: "";
+  background-color: var(--green-color);
+  width: 100px;
+  height: 2px;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+/* end landing  */
+/* start features  */
+.row .icons {
+  height: 180px;
+}
+.row .icons svg {
+  left: 50%;
+  transform: translateX(-50%);
+}
+.row .icons .num {
+  font-size: 12rem;
+  color: var(--section-color);
+}
+.row .icons .icon {
+  color: var(--green-color);
+}
+.row .box h3 {
+  color: var(--yellow-color);
+}
+/* end features  */
+/* start our-work */
+.our-work {
+  background-color: var(--section-color);
+}
+.btn-outline-danger {
+  border: none !important;
+}
+.our-work li a {
+  border: none;
+}
+.our-work li a.active {
+  color: var(--yellow-color) !important;
+  background-color: var(--red-color) !important;
+}
+.our-work li a:hover {
+  color: #fff !important;
+  background-color: var(--red-color) !important;
+}
+.our-work .box::before {
+  content: attr(data-work);
+  background-color: #03c7c080;
+  color: #fff;
+  font-weight: bold;
+  font-size: 24px;
+  width: calc(100% - 16px);
+  height: calc(100% - 16px);
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s;
+  transform: translateY(calc(100% + 16px));
+}
+.our-work .box:hover::before {
+  transform: translateY(0);
+}
+/* end our-work */
+/* start about us */
+.about-us .main-title p:last-child {
+  max-width: 500px;
+}
+/* end about us */
+/* start team section  */
+.team {
+  background-color: var(--section-color);
+}
+.box-name {
+  background-color: #33d1cc;
+}
+.team h3 {
+  color: #ffc501;
+}
+.about-us .image {
+  bottom: -30px;
+}
+/* end team section  */
+/* start project section  */
+.project {
+  background-color: var(--dark-color);
+}
+/* end project section  */
+/* start blog section */
+.blog .box .text{
+  background-color: var(--section-color);
+  transform: translateY(100px);
+  transition: 0.3s;
+}
+.blog .box:hover .text{
+  transform: translateY(0px);
+}
+
+/* end blog section */
+/* start Subscribe section */
+.subscribe {
+  background-color: var(--yellow-color);
+}
+.subscribe input {
+  border: none;
+  border-bottom: 1px solid #fff;
+  transition: 0.3s;
+}
+.subscribe input:focus {
+  outline: none;
+}
+.subscribe input::placeholder {
+  color: #fff;
+  transition: 0.3s;
+}
+.subscribe input:focus::placeholder {
+  color: transparent;
+}
+.subscribe a {
+  background-color: var(--dark-color);
+  border: none;
+}
+.subscribe a:hover {
+  background-color: var(--green-color);
+}
+/* end Subscribe section */
+  /* start footer section */
+  footer{
+    background-color: var(--dark-color);
+  }
+    footer span:first-of-type{
+      color: var(--green-color);
+    }
+    .copy{
+      color: var(--yellow-color) !important;
+    }
+    footer li a{
+      transition: 0.3s;
+    }
+    footer li a:hover{
+      color: var(--green-color) !important;
+    }
+  /*end footer section  */
