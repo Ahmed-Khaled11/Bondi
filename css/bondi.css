@@ -210,4 +210,7 @@ body {
     footer li a:hover{
       color: var(--green-color) !important;
     }
+    footer .icons{
+      height: fit-content !important;
+    }
   /*end footer section  */
